@@ -2,6 +2,8 @@
 
 虚拟现实动画设计课程作业。以实验室入口为场景，演示 Unity 关键帧动画、Animator 状态机、角色碰撞触发、音效与 UI 提示。
 
+私有仓库：https://github.com/Iaasw11/unity-interactive-door-assignment
+
 ## 打开项目
 
 1. 使用 **Unity 2020.3.0f1c1** 打开本项目文件夹，或在 Unity Hub 的“打开”中选择它。
