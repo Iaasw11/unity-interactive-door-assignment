@@ -1,0 +1,23 @@
+PASS | Scene references and player exist
+PASS | Initial closed state
+PASS | Both audio clips assigned
+PASS | Trigger and kinematic Rigidbody configured
+PASS | Far E interaction is rejected
+PASS | Near interaction range recognized
+PASS | Near E interaction opens door
+PASS | Opening audio starts with motion
+PASS | Repeated input during motion is ignored
+PASS | Manual opening reaches 102 degrees
+PASS | Animator enters Opened state
+PASS | Opening animation raises light intensity
+PASS | Near E interaction closes door
+PASS | Closing audio starts with motion
+PASS | Manual closing reaches zero degrees
+PASS | Sensor empty after player leaves
+PASS | Physics trigger detects entering player
+PASS | Automatic entry opens door
+PASS | Physics trigger detects exiting player
+PASS | Automatic exit closes door
+PASS | Queued reverse request finishes without snapping
+PASS | Opening clip contains hinge and light keyframes
+PASS | Status light returns to closed intensity
