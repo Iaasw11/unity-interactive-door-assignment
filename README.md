@@ -1,8 +1,8 @@
-# Motion Lab：交互式开关门动画系统
+# A MAGIC LAB：交互式开关门动画系统
 
-虚拟现实动画设计课程作业。以实验室入口为场景，演示 Unity 关键帧动画、Animator 状态机、角色碰撞触发、音效与 UI 提示。
+虚拟现实动画设计课程作业。以魔法实验室入口为场景，演示 Unity 关键帧动画、Animator 状态机、角色碰撞触发、音效与 UI 提示。入口采用 `A MAGIC LAB`、`01   -  Expecto Patronum` 与 `Sesame open the door  : )`；室内采用 `Welcom to LJL‘s Lab` 和 Lumos 照明咒文案，文字以当前保存的场景为准。
 
-私有仓库：https://github.com/Iaasw11/unity-interactive-door-assignment
+公开仓库：https://github.com/Iaasw11/unity-interactive-door-assignment
 
 ## 打开项目
 
@@ -66,7 +66,7 @@ Animator 使用布尔参数 `Open`：`Closed → Opening → Opened → Closing 
 
 ## 素材与环境
 
-场景主体使用 Unity 基本几何体和自制材质；右侧工作台新增一件 Kenney Space Kit 2.0 的 `satelliteDish_detailed` 卫星天线模型（CC0），保留原始模型和许可文件于 `Assets/ThirdParty/KenneySpaceKit`。素材来源：https://kenney.nl/assets/space-kit 。室内墙面标题按要求设为 `welcom to LJL‘s Lab’`，室内效果见 [截图](Docs/Verification/08-lab-interior.png)。两个 WAV 音效为原创程序合成，没有使用第三方人物或音频资源。运行时中文 UI 从 Windows 字体读取，优先使用 Microsoft YaHei。其他操作系统需要可用的中文字体。
+场景主体使用 Unity 基本几何体和自制材质；右侧工作台保留一件 Kenney Space Kit 2.0 的 `satelliteDish_detailed` 卫星天线模型（CC0），原始模型和许可文件位于 `Assets/ThirdParty/KenneySpaceKit`。素材来源：https://kenney.nl/assets/space-kit 。室内效果见 [最新截图](Docs/Verification/08-lab-interior.png)。两个 WAV 音效为原创程序合成，没有使用第三方人物或音频资源。运行时中文 UI 从 Windows 字体读取，优先使用 Microsoft YaHei。其他操作系统需要可用的中文字体。
 
 ## 作业逐项核对
 
@@ -80,11 +80,11 @@ Animator 使用布尔参数 `Open`：`Closed → Opening → Opened → Closing 
 | UI 交互提示 | 中文提示、模式、门状态及按键说明 |
 | 简短报告 | `Docs/交互式开关门动画系统-设计报告.pdf`，含本人署名 |
 | 注释完整的 C# 源码 | `Assets/Scripts` 中四个运行脚本；`Assets/Editor` 中辅助工具 |
-| 工程与 GitHub 链接 | 本项目与上方私有仓库；提交前须确认教师具有访问权限 |
+| 工程与 GitHub 链接 | 本项目与上方公开仓库，可直接查看 |
 
 以上功能在新增摆件后重新执行 Play 模式验收，23 项全部通过；桌面键鼠演示范围符合本次作业内容，尚未测试 VR 头显。
 
-项目不包含 Library、Temp、Logs 等缓存。请保留 Assets 中的 `.meta` 文件，以免引用失效。GitHub 仓库为私有，交作业时需要让教师账号拥有访问权限。
+项目不包含 Library、Temp、Logs 等缓存。请保留 Assets 中的 `.meta` 文件，以免引用失效。GitHub 仓库已公开。
 
 ## 参考资料
 
