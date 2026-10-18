@@ -66,7 +66,23 @@ Animator 使用布尔参数 `Open`：`Closed → Opening → Opened → Closing 
 
 ## 素材与环境
 
-场景全部使用 Unity 基本几何体和自制材质。两个 WAV 音效为原创程序合成，没有使用第三方人物或音频资源。运行时中文 UI 从 Windows 字体读取，优先使用 Microsoft YaHei。其他操作系统需要可用的中文字体。
+场景主体使用 Unity 基本几何体和自制材质；右侧工作台新增一件 Kenney Space Kit 2.0 的 `satelliteDish_detailed` 卫星天线模型（CC0），保留原始模型和许可文件于 `Assets/ThirdParty/KenneySpaceKit`。素材来源：https://kenney.nl/assets/space-kit 。室内墙面标题按要求设为 `welcom to LJL‘s Lab’`，室内效果见 [截图](Docs/Verification/08-lab-interior.png)。两个 WAV 音效为原创程序合成，没有使用第三方人物或音频资源。运行时中文 UI 从 Windows 字体读取，优先使用 Microsoft YaHei。其他操作系统需要可用的中文字体。
+
+## 作业逐项核对
+
+| 作业要求 | 实现与证据 |
+| --- | --- |
+| 门对象与合理层级 | `DoorRig > Hinge > DoorPanel`，门轴位于侧边 |
+| Animation 窗口录制开关门关键帧 | `Door_Open.anim`、`Door_Close.anim`；[Animation 窗口截图](Docs/Verification/07-animation-window.png) |
+| 自动或按键触发 | E 键近距离交互，M 键切换自动感应 |
+| 角色碰撞触发 | DoorSensor 的 Trigger、运动学 Rigidbody 与 DoorTrigger |
+| 开关门音效 | AudioSource 配合两个 WAV，开、关门时各播放一次 |
+| UI 交互提示 | 中文提示、模式、门状态及按键说明 |
+| 简短报告 | `Docs/交互式开关门动画系统-设计报告.pdf`，含本人署名 |
+| 注释完整的 C# 源码 | `Assets/Scripts` 中四个运行脚本；`Assets/Editor` 中辅助工具 |
+| 工程与 GitHub 链接 | 本项目与上方私有仓库；提交前须确认教师具有访问权限 |
+
+以上功能在新增摆件后重新执行 Play 模式验收，23 项全部通过；桌面键鼠演示范围符合本次作业内容，尚未测试 VR 头显。
 
 项目不包含 Library、Temp、Logs 等缓存。请保留 Assets 中的 `.meta` 文件，以免引用失效。GitHub 仓库为私有，交作业时需要让教师账号拥有访问权限。
 

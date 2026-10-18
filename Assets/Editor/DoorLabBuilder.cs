@@ -118,8 +118,9 @@ public static class DoorLabBuilder
         Cube("ExhibitRim",new Vector3(0,.48f,5.2f),new Vector3(2.25f,.035f,2.25f),cyan,architecture,false);
         var exhibit=Cube("Sculpture",new Vector3(0,1.55f,5.2f),new Vector3(1.1f,1.1f,1.1f),metal,architecture,false);
         exhibit.transform.rotation=Quaternion.Euler(25,35,25);
-        WorldText("VIRTUAL REALITY",new Vector3(-3.2f,3.35f,7.74f),.24f,new Color(.65f,.9f,1),architecture);
+        WorldText("welcom to LJL‘s Lab’",new Vector3(-3.2f,3.35f,7.74f),.24f,new Color(.65f,.9f,1),architecture);
         WorldText("ANIMATION   -   INTERACTION   -   EXPERIENCE",new Vector3(-3.2f,2.83f,7.73f),.075f,Color.white,architecture);
+        LabPersonalization.AddDish(architecture);
 
         var sun=new GameObject("KeyLight");var light=sun.AddComponent<Light>();light.type=LightType.Directional;light.color=new Color(.85f,.93f,1);light.intensity=1.05f;light.shadows=LightShadows.Soft;sun.transform.rotation=Quaternion.Euler(46,-32,0);
         var fill=new GameObject("InteriorLight");var inside=fill.AddComponent<Light>();inside.type=LightType.Point;inside.color=new Color(.23f,.7f,1);inside.intensity=2.8f;inside.range=12;fill.transform.position=new Vector3(0,3.8f,4);
